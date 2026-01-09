@@ -13,7 +13,7 @@ import tempfile
 import re
 import streamlit.config as config
 
-# ✅ Set 2 GB upload limit BEFORE importing streamlit
+#  Set 2 GB upload limit BEFORE importing streamlit
 os.environ['STREAMLIT_SERVER_MAX_UPLOAD_SIZE'] = '2048'  # MB
 st.config.set_option("server.maxUploadSize", 2048)
 
@@ -405,4 +405,5 @@ if "df" in st.session_state:
         st.switch_page("pages/Text_to_Chart.py")
 
 else:
+
     st.info("📥 Upload a dataset to get started (up to 2GB).")
